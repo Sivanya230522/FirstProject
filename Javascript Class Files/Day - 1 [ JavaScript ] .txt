@@ -1,0 +1,64 @@
+Day - 1 [ JavaScript ] 
+
+ INTRODUCTION OF JAVASCRIPT :
+
+ * Brendan Eich developed the JavaScript
+
+ * In 1995 JavaScript was developed.
+
+ * To create a website .
+
+ * C and C++ languages are used to develop the JavaScript.
+ 
+ * JavaScript was developed within 10 days. 
+
+ * Brendan Eich worked in Netscape company.
+
+ *JavaScript was first named as MOCHA.
+
+ * And changed name to Live Script.
+
+ * finally they named as JavaScript. 
+
+ *Netscape tie-up with ECMA -European Computer Manufacturer Association.
+ 
+ * ECMA standardized the JavaScript.
+
+ * Node.js for backend development
+
+
+FEATURES OF JAVASCRIPT : 
+
+* Open source 
+
+* Platform independent. =>  windows, mac, Linux
+ 
+* We can reuse code.
+
+
+Installations : 
+
+What is IDE ? => Integrated Development Environment. => VS code. 
+
+
+chrome => Visual studios code => Click on the first link => click windows download 
+
+chrome => Node.js download => click on the first link => click on the node download
+
+
+INSTALLATION AND CREATING FOLDER IN  VS CODE : 
+
+* File => open folder => create a new folder and select the folder => new folder created.
+* click on the new file located right of  the folder name => create a JS file => EX: script.js
+
+NODE jS : 
+ 
+* click on the node file and install the node js.
+* Open CMD[Command prompt] and type node -v to check the node version 
+
+
+
+
+
+
+

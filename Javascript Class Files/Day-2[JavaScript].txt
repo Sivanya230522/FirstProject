@@ -1,0 +1,46 @@
+DAY-2 :
+
+
+//Printing statement in JS => console.log( ) ; 
+
+
+//Extension to run js program => Code runner . 
+
+* OUTPUT : 
+
+1. Code runner.
+
+2. Terminal.
+
+3. Chrome 
+
+
+//Variable Types: 
+
+1. var 
+2. let
+3. const 
+
+var : 
+
+* It can redeclare the values [Same variable type, same variable name = different value].
+
+* It can reassign the values [same variable name = different values].
+
+
+let : 
+
+* It can't be redeclared.
+
+* But it can reassign the values.
+
+
+const : 
+
+* It can't be redeclared.
+
+* It can't be reassigned. 
+
+*it will not allow duplicating the variable type or name.
+
+

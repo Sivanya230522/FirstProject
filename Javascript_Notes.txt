@@ -1,0 +1,453 @@
+//How to write the javascript code
+//syntax
+//variable_type variable_name = value;
+//console.log(variable_name);
+
+//variable types
+//var
+//let
+//const
+
+//var
+      var a = 10 //redeclare
+      a = 5 //reassign
+      console.log(a);
+
+ //let
+       let b = 19; //it can't redeclare
+       b = 12;  //ressign
+       console.log(b);
+
+  //const
+
+    const c = 20;
+    c = 100;
+    console.log(c);
+=============================================================================================================================================================
+    //Datatypes:
+    //Primitive Datatype:
+     
+     //String - "viswana051085%^$^*#@" and 'hello'
+
+     var str = "Hello How Are You"
+     console.log(str);
+
+     //Number - 100 and 108.50
+
+     var num = 110.50
+     console.log(num);
+
+     //Boolean - True or False
+     //Null
+
+     var a = null
+     console.log(a);
+
+     //undefined
+
+     var e
+     console.log(e);
+     
+     //Non Primitive Datatype:
+
+     //Array[] - collection of value and data within the square bracket
+
+     var array = ["sivanya",123,147.45,true,null]
+     console.log(array[4]);
+
+     //Object{} - collection of key and value pairs
+
+     var obj = {
+
+        name: "viswa",
+        class: "x",
+        b_grp: 'A+'
+     }
+     console.log(obj);
+
+=============================================================================================================================================================   
+Function Statement:
+
+** A function statement in javascript is used to define a named function with optional parameters and a body of code to execute when the function is called
+
+Function Expression:
+
+** A function expression is javascript is a way to define a function as part of and expression typically by assigning it to a variable.Unlike function statement.
+
+* Function expression can be anonymous (where the function doesnot have a name or named )
+    //syntax
+    //const newfn = function(){
+    // console.log("hello im function expression")
+    //}
+    //newfn()
+
+Hoisting:
+
+** Hoisting is a javascript mechanism where variables declarations are moved to the top of their containing scope during the compilation phase,
+regardless of where they're declared in the code
+
+GEC - Global Execution Context:
+
+** The Global Execution Context (GEC) is the environment in which javascript code is executed globally
+** It consists of Two Phase: The creation phase, where variables and functions are hoisted and memory 
+** And the execution phase where the code is actually run.
+
+CallStack:
+
+** The callstack is a data structure used by the javascript engine to manage the execution context of
+** It keeps track of the order in which functions are called and executed
+** Callstack works in LIFO - Last In First Out
+=========================================================================================================================================================
+Operators:
+
+** Arithmatic Operators(+,-,*,/(quotient),%(modulus),**(exponent(power of values)),++increment,--decrement)
+
+//Addition
+var a = 10
+var b = 20
+console.log(a+b);
+
+//Subraction
+var a = 20
+var b = 10
+console.log(a-b);
+
+//Multiplication
+var a = 10
+var b = 30
+console.log(a*b);
+
+//Division
+var a = 100
+var b = 50
+console.log(a/b);
+
+//Modulus
+var a = 15
+var b = 3
+console.log(a%b);
+
+//Exponent
+var a = 5
+var b = 2
+console.log(a**b);
+
+//Increment
+var a = 10
+a++
+console.log(a);
+
+//Decrement
+var a = 10
+a--
+console.log(a);
+
+
+** Assignment Operators(+=,-=,/=,%=,**=)
+
+var num = 20;
+num += 10; //num=num+10==>20+10
+console.log(num);
+
+var num1 = 30;
+num1 -= 10;
+console.log(num1);
+
+var num3 = 10;
+num3 /= 2;
+console.log(num3);
+
+var num4 = 40;
+num4 %= 5;
+console.log(num4);
+
+var num5 = 5;
+num5 **= 3;
+console.log(num5);
+
+** Comparison Operators (<,>,<=,>=)==Boolean(True or False)
+
+var num6 = 5;
+var num7 = 15;
+console.log(num6>num7);
+console.log(num6<num7);
+console.log(num6>=num7);
+console.log(num6<=num7);
+
+** Euality Operators
+//Double Equals(==)[Loose Equality] //It checks only the values
+
+var a = 30
+var b = "30"
+console.log(a==b);
+
+//Trible Equals(===)[Strict Equality] //It checks both values and type of data
+
+var a = 30
+var b = "30"
+console.log(a===b);
+
+** Ternary Operators
+//Syntax
+
+//(condition)? statement_true : statement_false
+
+var age = 20
+var limit = (age>=18)? "He is eligible for vote" : "He is not eligible to vote"
+console.log(limit);
+
+var age = 1000
+var limit= (age>=18 || age<=70)? "He is eligible for vote" : "He is not eligible to vote"
+console.log(limit);
+=============================================================================================================================================================
+Loop:
+
+** A loop is a programming structure that repeats a set of instructions until a certain condition is met.Its used to automate repetitive tasks effectively.
+
+//For Loop:
+** The for loop is commonly used when you know how many times you want to iterate.
+** Its consists of three parts: initialization,condition and iteration expression
+
+//syntax
+//for (let i = 0; i<=5;i++){
+//        console.log(i)
+//}
+
+//While Loop:
+** Entry level condition checking
+** The while loop repeatedly executes a block of code as long as a specified condition is true
+
+//syntax
+//let count = 0
+// while(count<5){
+//    console.log(count)
+//    count++
+//}
+
+//Do-While Loop:
+** Similar to the while loop, but it ensures that the block of code is executed atleast once before checking the condition
+//syntax
+//let i = 0
+//do{
+//console.log("do while is printing:", i)
+//i++
+//}while(i<5)
+=============================================================================================================================================================
+Array Methods:
+
+//Push
+** The push() method adds one or more elements to the end of an array, returning the new length of the array
+
+const provisionstore = ["Viswa","Sivanya","Vidhya"];
+provisionstore.push("Harina");
+console.log(provisionstore);
+
+//Pop
+** The pop() method removes and returns the last element of an array, reducing its length by one
+
+const rationshop = ["Viswa","Sivanya","Vidhya","Harina"];
+rationshop.pop();
+console.log(rationshop);
+
+//Unshift
+** The unshift() method adds one or more elements to the beginning of an array,
+* shifting all other elements to a higher index and returns the new length of an array
+
+const supermarket = ["Viswa","Sivanya","Vidhya","Harina"];
+supermarket.unshift("Vijay");
+console.log(supermarket);
+
+//Shift
+** The shift() method removes and returns the first element of an array,
+shifting all other elements to a lower index, and updates the length of the array
+
+const supermarket1 = ["Viswa","Sivanya","Vidhya","Harina"];
+supermarket1.shift();
+console.log(supermarket1);
+
+//Concat
+** The concat() method is used to merge two or more arrays together,
+creating a new array containing the elements of the original arrays without modifying the original arrays
+
+const fruits = ["Apple", "Orange"];
+const morefruits = fruits.concat(["pineapple","mango"]);
+console.log(morefruits);
+
+//Sort
+** The sort() method arranges the elements of an array in ascending or descending order by default modifying the original array
+
+const num = [10,8,6,4,2,1,3,5,7,9]
+num.sort((a,b)=>a-b)
+console.log(num);
+
+const alphabet = ["Viswa","Sivanya","harina","nithika","Prithika"]
+alphabet.sort()
+console.log(alphabet);
+
+const num1 = [10,8,6,4,2,1,3,5,7,9]
+num1.sort((a,b)=>b-a)
+console.log(num1);
+
+//Slice
+** Slicing extracts a portion of a data structure like a list or string based on specified indices or criteria,
+allowing for selective retrieval of elements
+
+const animal = ["elephant","tiger","lion","fox","cheetah"]
+console.log(animal.slice(1));
+console.log(animal.slice(2,-1));
+console.log(animal.slice());
+
+//Splice
+** Splice is a method used in programming to modify an array by removing or replacing existing element and or adding new elements 
+into it at a specified index position
+//syntax
+//variable_name.splice("index",counter[0,1],actualvalue)
+// 0=> push and update the value
+// 1=> override and update the value
+
+const weeks = ["sunday","tuesday","wednesday","thursday","saturday"]
+weeks.splice(1,0,"monday");
+weeks.splice(5,0,"friday")
+console.log(weeks);
+
+//Split
+** Split refers to dividing something into separate parts
+** convert string into array
+
+// var spl = "My Name Is Sivanya"
+// var spl2 = spl.split(" ")
+// console.log(spl2);
+
+//Nested Array and object
+** In javascript an object is a collection of key and value pairs
+** It is a fundamental datatype used to store various keyed collections and more complex entities
+
+const stuobj = [{
+       name:"vicky",
+       age: 12,
+       std: "II",
+    },
+    {
+    name: "vinod",
+    age: 14,
+    std:"III",
+    },
+];
+console.log(stuobj[1].name);
+
+//Object Destructuring
+** Object destructuring in javascript allows you to extract multiple properties from an object and assign them to varibales in a concise and
+readble way enhancing code readability and reducing repetition
+
+var obj = {
+    name: "viswa",
+    age: 38,
+    dep: "sceience"
+}
+const{name,age,dep}=obj
+console.log(name,age,dep);
+
+//Array Destructuring
+
+const arr = ["sunday","monday","tuesday","wednesday"]
+const [day1,day2,day3,day4]=arr
+console.log(day1);
+
+//For Methods -> advance for loop concept
+
+//forEach ->To read the Array
+//syntax:
+//var_name.forEach((value,index,actualarray)=>)
+
+var day = ["sunday","monday","tuesday","wednesday","thursday"]
+day.forEach((val,indx,actarr)=>console.log(val)
+)
+
+//forIn -> To read and loop the object
+//syntax:
+//for(var_type var_name in obj_name){
+//code
+//}
+
+var obj = {
+    name:"faizal",
+    city: "france",
+    b_grp: "A+"
+}
+for(var x in obj){
+   console.log(obj[x]);
+    }
+
+//forOf -> array and string loop
+//syntax:
+//for(var_type var_name of str_name)
+
+var str = "java"
+for(var x of str){
+console.log(x);
+}
+
+//String Methods
+//Replace
+var greets = "hello world"
+console.log(greets.replace("hello","welcome"));
+
+//Repeat
+var rep = "hi"
+console.log(rep.repeat(2));
+=============================================================================================================================================================
+//MRF(Map,Reduce,Filter)
+//Map:
+//syntax
+//var_name.map(value,indx,actualarray)=>)
+
+// const number = [1,2,3,4,5,6,7,8,9,10];
+// const map = number.map((val,indx,actualarray)=>val*2);
+// console.log(map);
+
+//Reduce: add
+//syntax
+//var_name.reduce(accumulator,val.indx,actualarray)=>)
+
+// const reduce = number.reduce((acc,val,indx,actualarray)=>acc+val,3);
+// console.log(reduce);
+
+//Filter
+//syntax
+//var_name.filter((var,indx,actualarray))
+
+// const filter = number.filter((val,indx,actualarray)=>val>5);
+// console.log(filter);
+
+//this
+
+// const obj = {
+//     name: "viswa",
+//     age:"20",
+//     details :  function(){//local scope
+//         console.log(this.age);
+//     }
+// }
+// obj.details()
+
+//Template literals or string literals
+//syntax: `${}`
+
+// var a = "Hello"
+// var b = "Viswa"
+// console.log(a+b+"how are you"); //Old way of getting output
+// console.log(`${a} ${b} how are you`);//New way of getting output
+
+//Settimeout
+
+// setTimeout(()=>{
+//     console.log("Welcome");
+// },3000)
+=============================================================================================================================================================
+//Constructor
+// A constructor method in javascript is a special function used to create and 
+// initialize objects created from a class
+// It setup initial state and behavior for new instance of the class
+
+
+
